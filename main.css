@@ -1,0 +1,166 @@
+body {
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  background: #e6e6e6;
+}
+
+/*-------------------------- NAV BAR ----------------------*/
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  background-color: rgb(229, 213, 192);
+}
+
+nav li {
+  display: table-cell;
+}
+
+li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 30px 30px;
+}
+
+li a:hover {
+  color: lightcoral;
+  background-color: rgb(238, 211, 211);
+}
+
+/*-------------------------- H1.. -------------------------*/
+header h1 {
+  font-size: 70px;
+  font-family: "Liu Jian Mao Cao", cursive;
+  text-shadow: 5px 5px 5px rgb(77, 73, 73);
+  justify-content: center;
+  text-align: center;
+}
+
+header h3 {
+  font-size: 30px;
+  font-family: "Liu Jian Mao Cao", cursive;
+  text-shadow: 5px 5px 5px rgb(77, 73, 73);
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Liu Jian Mao Cao", cursive;
+}
+
+/*-------------------------- CLASSES -----------------------*/
+.headliners {
+  font-family: "Liu Jian Mao Cao", cursive;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.first-p {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.me {
+  text-align: center;
+  max-width: 100%;
+}
+
+/*-------------------- SECTIONS ABSCHNITTE ----------------*/
+section {
+  display: list-item;
+  text-align: center;
+  margin-top: 50px;
+}
+
+article {
+  text-align: center;
+}
+
+aside {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+aside p {
+  padding: 20px;
+}
+
+hr {
+  width: 87%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*--------------------------- BUTTONS ----------------------*/
+button {
+  color: grey;
+  background-color: rgb(229, 213, 192);
+}
+
+button:hover {
+  color: lightcoral;
+  background-color: rgb(238, 211, 211);
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/*---------------------- IMG AUDIO VIDEO --------------------*/
+img {
+  width: 300px;
+  height: 200px;
+  padding-top: 30px;
+}
+
+figure.images {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+figcaption {
+  position: relative;
+  font-size: 15px;
+}
+
+video {
+  width: 93%;
+  height: auto;
+}
+
+audio {
+  width: 80%;
+}
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------- FOOTER --------------------*/
+footer {
+  position: relative;
+  width: 100%;
+  bottom: -100px;
+  background-color: rgb(219, 202, 181);
+  display: flex;
+  box-sizing: border-box;
+}
+
+footer p {
+  color: grey;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
