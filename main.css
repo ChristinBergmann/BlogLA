@@ -1,5 +1,5 @@
 body {
-  font-family: "Liu Jian Mao Cao", cursive;
+  /* font-family: "Liu Jian Mao Cao", cursive; */
   font-family: "Open Sans Condensed", sans-serif;
   background: #e6e6e6;
 }
@@ -89,6 +89,7 @@ aside {
 
 aside p {
   padding: 20px;
+  justify-content: center;
 }
 
 hr {
