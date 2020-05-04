@@ -22,8 +22,7 @@ body {
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
+  justify-content: space-evenly;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
@@ -153,9 +152,6 @@ button:hover {
 }
 
 .images {
-  /* display: inline-block;
-  width: 300px;
-  height: 240px; */
   margin: 20px;
 }
 
@@ -183,7 +179,6 @@ audio {
 footer {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   background-color: rgb(229, 213, 192);
   background-size: cover;
   bottom: 10px;
