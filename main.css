@@ -2,28 +2,44 @@ body {
   /* font-family: "Liu Jian Mao Cao", cursive; */
   font-family: "Open Sans Condensed", sans-serif;
   background: #e6e6e6;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-sizing: content-box;
+  font-size: 22px;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .images img {
+    width: 400px;
+  }
 }
 
 /*-------------------------- NAV BAR ----------------------*/
 nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  overflow: hidden;
-  display: table;
-  width: 100%;
+  /* overflow: hidden; */
   background-color: rgb(229, 213, 192);
 }
 
 nav li {
-  display: table-cell;
+  letter-spacing: 0.25em;
 }
 
 li a {
-  display: block;
   color: grey;
+  display: block;
   text-align: center;
-  padding: 30px 30px;
+  padding: 20px 40px;
 }
 
 li a:hover {
@@ -33,23 +49,32 @@ li a:hover {
 
 /*-------------------------- H1.. -------------------------*/
 header h1 {
-  font-size: 70px;
+  font-size: 5rem;
   font-family: "Liu Jian Mao Cao", cursive;
   text-shadow: 5px 5px 5px rgb(77, 73, 73);
   justify-content: center;
   text-align: center;
 }
 
-header h3 {
-  font-size: 30px;
+header h2 {
+  font-size: 3rem;
   font-family: "Liu Jian Mao Cao", cursive;
   text-shadow: 5px 5px 5px rgb(77, 73, 73);
   justify-content: center;
   text-align: center;
 }
 
-h2 {
+h3 {
   font-family: "Liu Jian Mao Cao", cursive;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+a {
+  color: deeppink;
+  text-decoration: none;
 }
 
 /*-------------------------- CLASSES -----------------------*/
@@ -60,7 +85,7 @@ h2 {
 }
 
 .first-p {
-  font-size: 20px;
+  font-size: 1.7rem;
   padding-top: 30px;
   padding-bottom: 20px;
 }
@@ -69,10 +94,14 @@ h2 {
   text-align: center;
   max-width: 100%;
 }
+.me img {
+  width: 280px;
+  height: 250px;
+}
 
 /*-------------------- SECTIONS ABSCHNITTE ----------------*/
 section {
-  display: list-item;
+  justify-content: center;
   text-align: center;
   margin-top: 50px;
 }
@@ -80,16 +109,13 @@ section {
 article {
   text-align: center;
 }
-
 aside {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 aside p {
   padding: 20px;
-  justify-content: center;
 }
 
 hr {
@@ -114,23 +140,34 @@ button:hover {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  margin-bottom: 15px;
 }
 
 /*---------------------- IMG AUDIO VIDEO --------------------*/
-img {
-  width: 300px;
-  height: 200px;
-  padding-top: 30px;
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: rgb(238, 211, 211);
 }
 
-figure.images {
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+.images {
+  /* display: inline-block;
+  width: 300px;
+  height: 240px; */
+  margin: 20px;
+}
+
+img {
+  /* width: 260px; */
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
 }
 
 figcaption {
   position: relative;
-  font-size: 15px;
+  font-size: 1.3rem;
 }
 
 video {
@@ -142,27 +179,21 @@ audio {
   width: 80%;
 }
 
-.audio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*---------------------- FOOTER --------------------*/
 footer {
-  position: relative;
-  width: 100%;
-  bottom: -100px;
-  background-color: rgb(219, 202, 181);
   display: flex;
-  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(229, 213, 192);
+  background-size: cover;
+  bottom: 10px;
 }
 
 footer p {
   color: grey;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 1.3rem;
+  padding: 0px 10px;
+}
+footer a {
+  color: lightcoral;
 }
